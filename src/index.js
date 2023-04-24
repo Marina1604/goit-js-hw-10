@@ -32,7 +32,7 @@ function onCountryInput() {
         );
       }
     })
-    .catch(Notiflix.Notify.failure('Oops, there is no country with that name'));
+    .catch(error => console.log(error));
 }
 
 refs.countryInput.addEventListener(
